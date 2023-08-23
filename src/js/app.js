@@ -1,1 +1,1 @@
-console.log ("Js has been linked. YAY.")
+console.log("Js has been linked. YAY.");
