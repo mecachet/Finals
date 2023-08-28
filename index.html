@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
@@ -156,7 +160,8 @@
               15 people as a supervisor, I've honed leadership and communication
               skills. Committed to high-quality results independently or
               collaboratively, I'm passionate about making a positive industry
-              impact. Currently mastering front-end development, to infinity and beyond.
+              impact. Currently mastering front-end development, to infinity and
+              beyond.
             </p>
             <button class="intro-button">Hire Me</button>
           </div>
@@ -187,7 +192,7 @@
         <section class="section-info">
           <div class="info-flex">
             <div>
-              <ion-icon name="call-outline" class="info-icon"></ion-icon>
+              <i class="info-icon fa-solid fa-phone"></i>
             </div>
             <div>
               <h2 class="info-h2">Phone Number</h2>
@@ -196,7 +201,7 @@
           </div>
           <div class="info-flex">
             <div>
-              <ion-icon name="location-outline" class="info-icon"></ion-icon>
+              <i class="info-icon fa-solid fa-location-dot"></i>
             </div>
             <div>
               <h2 class="info-h2">My Address</h2>
@@ -205,7 +210,7 @@
           </div>
           <div class="info-flex">
             <div>
-              <ion-icon name="mail-outline" class="info-icon"></ion-icon>
+              <i class="info-icon fa-solid fa-envelope"></i>
             </div>
             <div>
               <h2 class="info-h2">Email Address</h2>
@@ -213,35 +218,102 @@
             </div>
           </div>
         </section>
-        <section class="section-services">
+        <section class="section-services" id="service-container">
           <div class="service" id="text1">
-            <ion-icon class="service-icon" name="globe-outline"></ion-icon>
+            <i class="fas fa-globe service-icon"></i>
             <h3 class="service-h3">Website Layout</h3>
           </div>
           <div class="service" id="text2">
-            <ion-icon class="service-icon" name="settings-outline"></ion-icon>
+            <i class="fas fa-cogs service-icon"></i>
             <h3 class="service-h3">Responsive Design</h3>
           </div>
           <div class="service" id="text3">
-            <ion-icon class="service-icon" name="logo-html5"></ion-icon>
+            <i class="fab fa-html5 service-icon"></i>
             <h3 class="service-h3">HTML/CSS</h3>
           </div>
           <div class="service" id="text4">
-            <ion-icon class="service-icon" name="logo-javascript"></ion-icon>
+            <i class="fab fa-js service-icon"></i>
             <h3 class="service-h3">JavaScript</h3>
+          </div>
+          <div class="service" id="text5">
+            <i class="fa-solid fa-lightbulb service-icon"></i>
+            <h3 class="service-h3">Unique Ideas</h3>
+          </div>
+          <div class="service" id="text6">
+            <i class="fa-solid fa-fish service-icon"></i>
+            <h3 class="service-h3">Fish</h3>
+          </div>
+          <div class="service" id="text7">
+            <i class="fa-solid fa-list-check service-icon"></i>
+            <h3 class="service-h3">Managment</h3>
+          </div>
+          <div class="service" id="text8">
+            <i class="fa-solid fa-palette service-icon"></i>
+            <h3 class="service-h3">Design</h3>
+          </div>
+        </section>
+        <section class="comments-slider">
+          <div class="comments-wrapper">
+            <div class="comments-slide">
+              <p class="comments-p">
+                "Otar is deligent, creative, open-minded. He boasts a good sense
+                of humor and stands out as a good colleague. Otar's team working
+                abilities makes him a good player and a one to be chosen."
+              </p>
+              <img
+                class="comments-img"
+                src="src/images/GL.jpg"
+                alt="Giorgi Lekiashvili"
+              />
+              <div class="comments-name">
+                <p class="comments-p job">
+                  Linguist, Full Stack-Developer and Buisness Owner.
+                </p>
+                <h3 class="comments-h3">Giorgi Lekiashvili</h3>
+              </div>
+            </div>
+            <div class="comments-slide">
+              <p class="comments-p">
+                "Hello folks, I am Joe Rogan. Otar is a cool dude, I've known
+                him since 09'. His help was tremendous for my career growth."
+              </p>
+              <img
+                class="comments-img"
+                src="src/images/JR.jpg"
+                alt="Joe Rogan"
+              />
+              <div class="comments-name">
+                <p class="comments-p job">
+                  Podcaster, UFC commentator, Certified cool guy.
+                </p>
+                <h3 class="comments-h3">Joe Rogan</h3>
+              </div>
+            </div>
+            <div class="comments-slide">
+              <p class="comments-p">
+                "Otar is a talanted, easy going and a good friend. He is
+                determined to achieve his goals and have fun meanwhile."
+              </p>
+              <img
+                class="comments-img"
+                src="src/images/GK1.jpg"
+                alt="Guja Kuprashvili"
+              />
+              <div class="comments-name">
+                <p class="comments-p job">Model, Diplomat, Buisness Owner.</p>
+                <h3 class="comments-h3">Guja Kuprashvili</h3>
+              </div>
+            </div>
+          </div>
+          <div class="comments-btns">
+            <button id="comments-button-1"></button>
+            <button id="comments-button-2"></button>
+            <button id="comments-button-3"></button>
           </div>
         </section>
       </main>
       <footer></footer>
       <script src="src/js/scrypt.js"></script>
-      <script
-        type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      ></script>
-      <script
-        nomodule
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-      ></script>
     </div>
     <script src="src/js/app.js"></script>
   </body>

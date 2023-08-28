@@ -29,43 +29,77 @@ function initSlider() {
   startAutoSliderFn();
 }
 initSlider();
-const text1 = document.getElementById("text1");
-const text2 = document.getElementById("text2");
-const text3 = document.getElementById("text3");
-const text4 = document.getElementById("text4");
+const serviceContainer = document.getElementById("service-container");
 
-text1.onmouseover = function () {
-  text1.innerHTML = `Designing the visual layout of websites, including selecting color schemes, typography, and overall aesthetics. Creating mockups, wireframes, and prototypes to plan the website's look and feel.`;
+const originalText = {
+  text1: `<i class="fas fa-globe service-icon"></i>
+    <h3 class="service-h3">Website Design</h3>`,
+  text2: `<i class="fas fa-cogs service-icon"></i>
+    <h3 class="service-h3">Responsive Design</h3>`,
+  text3: `<i class="fab fa-html5 service-icon"></i>
+    <h3 class="service-h3">HTML/CSS Coding</h3>`,
+  text4: `<i class="fab fa-js service-icon"></i>
+    <h3 class="service-h3">JavaScript</h3>`,
+  text5: `<i class="fa-solid fa-lightbulb service-icon"></i>
+    <h3 class="service-h3">Unique Ideas</h3>`,
+  text6: ` <i class="fa-solid fa-fish service-icon"></i>
+    <h3 class="service-h3">Fish</h3>`,
+  text7: ` <i class="fa-solid fa-list-check service-icon"></i>
+    <h3 class="service-h3">Managment</h3>`,
+  text8: `<i class="fa-solid fa-palette service-icon"></i>
+    <h3 class="service-h3">Design</h3>`,
 };
 
-text1.onmouseout = function () {
-  text1.innerHTML = `<ion-icon class="service-icon" name="globe-outline"></ion-icon>
-    <h3 class="service-h3">Website Design</h3>`;
+const newText = {
+  text1: `Designing the visual layout of websites, including selecting color schemes, typography, and overall aesthetics. Creating mockups, wireframes, and prototypes to plan the website's look and feel.`,
+  text2: `Ensuring that websites are responsive, meaning they adapt and display properly on different devices and screen sizes, such as desktops, tablets, and smartphones.`,
+  text3: `Writing HTML and CSS code to structure the content and define the visual presentation of the website.`,
+  text4: `Using JavaScript to add interactivity and dynamic elements to websites. This can include animations, interactive forms, pop-up modals, and more.`,
+  text5: `Designing the visual layout of websites, including selecting color schemes, typography, and overall aesthetics. Creating mockups, wireframes, and prototypes to plan the website's look and feel.`,
+  text6: `Ensuring that websites are responsive, meaning they adapt and display properly on different devices and screen sizes, such as desktops, tablets, and smartphones.`,
+  text7: `Writing HTML and CSS code to structure the content and define the visual presentation of the website.`,
+  text8: `Using JavaScript to add interactivity and dynamic elements to websites. This can include animations, interactive forms, pop-up modals, and more.`,
 };
 
-text2.onmouseover = function () {
-  text2.innerHTML = `Ensuring that websites are responsive, meaning they adapt and display properly on different devices and screen sizes, such as desktops, tablets, and smartphones.`;
-};
+serviceContainer.addEventListener("mouseover", function (event) {
+  const target = event.target.closest(".service");
+  if (target) {
+    const id = target.getAttribute("id");
+    target.innerHTML = newText[id];
+    target.querySelector(".service-icon").style.display = "none";
+  }
+});
 
-text2.onmouseout = function () {
-  text2.innerHTML = `<ion-icon class="service-icon" name="globe-outline"></ion-icon>
-    <h3 class="service-h3">Responsive Design</h3>`;
-};
+serviceContainer.addEventListener("mouseout", function (event) {
+  const target = event.target.closest(".service");
+  if (target) {
+    const id = target.getAttribute("id");
+    target.innerHTML = originalText[id];
+    target.querySelector(".service-icon").style.display = "inline-block";
+  }
+});
 
-text3.onmouseover = function () {
-  text3.innerHTML = `Writing HTML and CSS code to structure the content and define the visual presentation of the website.`;
-};
+let commentsSlides = document.querySelectorAll(".comments-slide");
+let commentsButton1 = document.getElementById("comments-button-1");
+let commentsButton2 = document.getElementById("comments-button-2");
+let commentsButton3 = document.getElementById("comments-button-3");
 
-text3.onmouseout = function () {
-  text3.innerHTML = `<ion-icon class="service-icon" name="globe-outline"></ion-icon>
-    <h3 class="service-h3">HTML/CSS Coding</h3>`;
-};
+commentsSlides[0].classList.add("active");
 
-text4.onmouseover = function () {
-  text4.innerHTML = `Use JavaScript to add interactivity and dynamic elements to websites. This can include animations, interactive forms, pop-up modals, and more.`;
-};
+commentsButton1.addEventListener("click", function () {
+  commentsSlides[0].classList.add("active");
+  commentsSlides[1].classList.remove("active");
+  commentsSlides[2].classList.remove("active");
+});
 
-text4.onmouseout = function () {
-  text4.innerHTML = `<ion-icon class="service-icon" name="globe-outline"></ion-icon>
-    <h3 class="service-h3">JS Development</h3>`;
-};
+commentsButton2.addEventListener("click", function () {
+  commentsSlides[0].classList.remove("active");
+  commentsSlides[1].classList.add("active");
+  commentsSlides[2].classList.remove("active");
+});
+
+commentsButton3.addEventListener("click", function () {
+  commentsSlides[0].classList.remove("active");
+  commentsSlides[1].classList.remove("active");
+  commentsSlides[2].classList.add("active");
+});
