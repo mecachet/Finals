@@ -66,7 +66,6 @@ serviceContainer.addEventListener("mouseover", function (event) {
   if (target) {
     const id = target.getAttribute("id");
     target.innerHTML = newText[id];
-    target.querySelector(".service-icon").style.display = "none";
   }
 });
 
