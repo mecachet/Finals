@@ -104,32 +104,70 @@ commentsButton3.addEventListener("click", function () {
   commentsSlides[2].classList.add("active");
 });
 
-function filterProjects(category) {
-  const projects = document.querySelectorAll(".project");
-
-  projects.forEach((project) => {
-    const projectCategory = project.getAttribute("data-category");
-
-    if (category === "all" || projectCategory === category) {
-      project.style.display = "block";
-    } else {
-      project.style.display = "none";
-    }
-  });
-}
-
 document.addEventListener("DOMContentLoaded", function () {
-  const categoryItems = document.querySelectorAll(".projects-li");
+  let liAll = document.getElementById("li-all");
+  let liMyPortfolio = document.getElementById("li-my-portfolio");
+  let liSouthBronx = document.getElementById("li-south-bronx");
+  let liBigData = document.getElementById("li-big-data");
+  let liRecords = document.getElementById("li-records");
+  let liDope = document.getElementById("li-dope");
+  let liEztv = document.getElementById("li-eztv");
 
-  categoryItems.forEach((item) => {
-    item.addEventListener("click", function () {
-      const categoryId = this.id.replace("li-", "");
-      filterProjects(categoryId);
+  let gridMyPortfolio = document.querySelector(".project.my-portfolio");
+  let gridSouthBronx = document.querySelector(".project.south-bronx");
+  let gridBigData = document.querySelector(".project.big-data");
+  let gridRecords = document.querySelector(".project.records");
+  let gridDope = document.querySelector(".project.dope");
+  let gridEztv = document.querySelector(".project.eztv");
+
+  let array = [
+    gridMyPortfolio,
+    gridSouthBronx,
+    gridBigData,
+    gridRecords,
+    gridDope,
+    gridEztv,
+  ];
+
+  function removeStyles() {
+    array.forEach((item) => {
+      item.removeAttribute("style");
+    });
+  }
+
+  liAll.addEventListener("click", function () {
+    array.forEach((item) => {
+      item.style.filter = "brightness(100%)";
     });
   });
 
-  const allCategory = document.getElementById("li-all");
-  allCategory.addEventListener("click", function () {
-    filterProjects("all");
+  liMyPortfolio.addEventListener("click", function () {
+    removeStyles();
+    gridMyPortfolio.style.filter = "brightness(100%)";
+  });
+
+  liSouthBronx.addEventListener("click", function () {
+    removeStyles();
+    gridSouthBronx.style.filter = "brightness(100%)";
+  });
+
+  liBigData.addEventListener("click", function () {
+    removeStyles();
+    gridBigData.style.filter = "brightness(100%)";
+  });
+
+  liRecords.addEventListener("click", function () {
+    removeStyles();
+    gridRecords.style.filter = "brightness(100%)";
+  });
+
+  liDope.addEventListener("click", function () {
+    removeStyles();
+    gridDope.style.filter = "brightness(100%)";
+  });
+
+  liEztv.addEventListener("click", function () {
+    removeStyles();
+    gridEztv.style.filter = "brightness(100%)";
   });
 });
