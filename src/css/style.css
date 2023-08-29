@@ -452,6 +452,7 @@
   font-size: 70px;
   margin-bottom: 55px;
   font-weight: bold;
+  margin-top: 50px;
 }
 
 .projects-flex {
@@ -542,12 +543,19 @@
 
 /* Article */
 
-.lastArticle {
+.newsnevents {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #2ED279;
+}
+
+.lastest {
   font-size: 70px;
-  font-family: "GlacialIndifference-Bold";
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  font-weight: bold;
 }
 .statia_Maintext {
   max-width: 470px;
@@ -570,13 +578,13 @@
   font-family: "GlacialIndifference-Bold";
   max-width: 304px;
 }
-.freelance {
-  font-size: 10px;
-  color: #b9b6b6;
+.fishweekly {
+  font-size: 12px;
+  color: #e93656;
 }
 .statia_Maintext,
 .statia1_title,
-.freelance {
+.fishweekly {
   margin-left: 30px;
 }
 .articleTime1 {
