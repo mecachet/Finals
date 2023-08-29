@@ -543,6 +543,20 @@
 
 /* Article */
 
+.newsnevents {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #2ED279;
+}
+
+.lastest {
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .articles{
 	text-align: center;
 	align-items: center;
@@ -594,4 +608,7 @@
 
 .section-six{
 	margin-top: 50px;
+}
+.article-logo-bulb {
+  padding: 30px;
 }
