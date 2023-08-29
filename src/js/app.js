@@ -51,14 +51,14 @@ const originalText = {
 };
 
 const newText = {
-  text1: `Designing the visual layout of websites, including selecting color schemes, typography, and overall aesthetics. Creating mockups, wireframes, and prototypes to plan the website's look and feel.`,
-  text2: `Ensuring that websites are responsive, meaning they adapt and display properly on different devices and screen sizes, such as desktops, tablets, and smartphones.`,
+  text1: `Designing the visual layout of websites, aesthetics. Creating mockups, wireframes, and prototypes to plan the website.`,
+  text2: `Ensuring that website is responsive, that they adapt and display properly on various devices and screen sizes, such as desktops, tablets, and smartphones.`,
   text3: `Writing HTML and CSS code to structure the content and define the visual presentation of the website.`,
   text4: `Using JavaScript to add interactivity and dynamic elements to websites. This can include animations, interactive forms, pop-up modals, and more.`,
-  text5: `Designing the visual layout of websites, including selecting color schemes, typography, and overall aesthetics. Creating mockups, wireframes, and prototypes to plan the website's look and feel.`,
-  text6: `Ensuring that websites are responsive, meaning they adapt and display properly on different devices and screen sizes, such as desktops, tablets, and smartphones.`,
-  text7: `Writing HTML and CSS code to structure the content and define the visual presentation of the website.`,
-  text8: `Using JavaScript to add interactivity and dynamic elements to websites. This can include animations, interactive forms, pop-up modals, and more.`,
+  text5: `Coming up with unique ideas to further excell the projects. Good team player who loves to share ideas.`,
+  text6: `He loves fishes, he keeps them as well. He keeps Rasporas, Tetras, Chichlids, Albino Plecos and more.`,
+  text7: `Easly managable, but most importantly good at managing.`,
+  text8: `Designing is my strong suit, since I've been designing since I was a small person.`,
 };
 
 serviceContainer.addEventListener("mouseover", function (event) {
@@ -102,4 +102,34 @@ commentsButton3.addEventListener("click", function () {
   commentsSlides[0].classList.remove("active");
   commentsSlides[1].classList.remove("active");
   commentsSlides[2].classList.add("active");
+});
+
+function filterProjects(category) {
+  const projects = document.querySelectorAll(".project");
+
+  projects.forEach((project) => {
+    const projectCategory = project.getAttribute("data-category");
+
+    if (category === "all" || projectCategory === category) {
+      project.style.display = "block";
+    } else {
+      project.style.display = "none";
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const categoryItems = document.querySelectorAll(".projects-li");
+
+  categoryItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      const categoryId = this.id.replace("li-", "");
+      filterProjects(categoryId);
+    });
+  });
+
+  const allCategory = document.getElementById("li-all");
+  allCategory.addEventListener("click", function () {
+    filterProjects("all");
+  });
 });

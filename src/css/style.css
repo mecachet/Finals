@@ -450,67 +450,106 @@
 #comments-button-3:hover {
   border: 2px solid #e93656;
 }
-.latProj {
+.projects-h2 {
+  text-align: center;
   font-size: 70px;
-  font-family: "GlacialIndifference-Bold";
-  display: flex;
-  justify-content: center;
-  margin-top: 150px;
+  margin-bottom: 55px;
 }
 
-.category {
-  max-width: 250px;
-  width: 100%;
-  background-color: #131a36;
+.projects-flex {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 170px;
+}
+
+.projects-left {
+  width: 240px;
+  height: 400px;
+  background-color: #15263e;
+}
+
+.projects-right {
+  width: 900px;
+  height: 700px;
+}
+
+.projects-ul {
+  margin-top: 40px;
+}
+
+.projects-li {
+  list-style: none;
+  text-align: center;
+  line-height: 44px;
   color: white;
-  display: grid;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 30px;
   font-size: 20px;
-  font-family: "GlacialIndifference-Bold";
-}
-.box {
-  max-width: 250px;
-  width: 100%;
-}
-.myProject {
-  max-width: 900px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-.filter {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 55px;
-  margin-bottom: 150px;
+  transition: all 0.5s;
 }
 
-#Icon,
-#Presentation,
-#Logo,
-#MyPortf,
-#SkyHouse,
-#FindHouse {
-  position: relative;
+.projects-li:hover {
+  cursor: pointer;
+  color: #e93656;
 }
-.myProject p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
+
+.projects-right {
+  color: white;
+  font-size: 25px;
+  display: grid;
+  text-align: center;
+
+  grid-template-areas:
+    "1 2 3 "
+    "4 5 6";
 }
-.projectText {
-  background-color: #000000;
-  max-width: 250px;
+
+.project {
+  width: 300px;
+  height: 350px;
+  padding-top: 110px;
+  transition: all 0.5s;
+  background-size: cover;
+  background-position: center;
 }
-#Icon:hover .box,
-#Presentation:hover .box,
-#Logo:hover .box,
-#MyPortf:hover .box,
-#SkyHouse:hover .box,
-#FindHouse:hover .box {
-  display: none;
+
+.project:hover {
+  cursor: pointer;
+  background-color: #15263e;
+}
+
+.project:hover .projects-icon {
+  display: inline-block;
+}
+
+.project:hover .projects-p {
+  display: block;
+}
+
+.my-portfolio {
+  background-image: url("/src/images/project1.jpg");
+}
+
+.south-bronx {
+  background-image: url("/src/images/project2.jpg");
+}
+
+.big-data {
+  background-image: url("/src/images/project3.jpg");
+}
+
+.records {
+  background-image: url("/src/images/project4.jpg");
+}
+
+.dope {
+  background-image: url("/src/images/project5.jpg");
+}
+
+.eztv {
+  background-image: url("/src/images/project6.jpg");
+}
+
+.projects-link {
+  text-decoration: none;
+  color: white;
 }
