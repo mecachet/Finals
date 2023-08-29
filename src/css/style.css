@@ -320,10 +320,6 @@
   box-sizing: border-box;
 }
 
-.service-icon {
-  font-size: 60px;
-}
-
 .fa-globe::before {
   content: "\f0ac";
 }
