@@ -516,35 +516,27 @@
   cursor: pointer;
   background-color: #15263e;
 }
-
 .project:hover .projects-icon {
   display: inline-block;
 }
-
 .project:hover .projects-p {
   display: block;
 }
-
 .my-portfolio {
   background-image: url("/src/images/project1.jpg");
 }
-
 .south-bronx {
   background-image: url("/src/images/project2.jpg");
 }
-
 .big-data {
   background-image: url("/src/images/project3.jpg");
 }
-
 .records {
   background-image: url("/src/images/project4.jpg");
 }
-
 .dope {
   background-image: url("/src/images/project5.jpg");
 }
-
 .eztv {
   background-image: url("/src/images/project6.jpg");
 }
@@ -556,61 +548,68 @@
 .lastArticle {
   font-size: 70px;
   font-family: "GlacialIndifference-Bold";
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 50px;
 }
-.statia_Maintext {
-  max-width: 470px;
-  font-size: 12px;
-  font-family: "Muli-Light";
+
+.article {
+  display: flex;
+  margin-bottom: 50px;
 }
 
-.statia1_part1,
-.statia2_part1 {
-  background-color: #fafafa;
-  display: flex;
-  flex-direction: column;
-  max-width: 700px;
-  width: 50%;
-  margin-left: 30px;
-  padding-top: 100px;
-  padding-bottom: 50px;
+.article-top {
+  flex-direction: column; /* Top layout, column for image above content */
 }
-.statia1_title {
+
+.article-middle {
+  flex-direction: row-reverse; /* Middle layout, image to the left */
+}
+
+.article-bottom {
+  flex-direction: column-reverse; /* Bottom layout, column for image below content */
+}
+
+.article-content {
+  background-color: #fafafa;
+  flex: 1;
+  padding: 100px 30px 50px;
+}
+
+.article-title {
   font-size: 30px;
   font-family: "GlacialIndifference-Bold";
   max-width: 304px;
 }
-.freelance {
-  font-size: 10px;
+
+.article-category,
+.article-text {
+  font-size: 12px;
+  font-family: "Muli-Light";
   color: #b9b6b6;
 }
-.statia_Maintext,
-.statia1_title,
-.freelance {
-  margin-left: 30px;
-}
-.articleTime1 {
-  color: #e93656;
-  font-size: 20px;
-  transform: matrix(0, -1, 1, 0, 0, 0);
-  margin-top: 150px;
-}
-.statia1 {
-  display: flex;
-}
-.statia1_part2 {
+
+.article-meta {
   background-color: #131a36;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e93656;
+  transform: rotate(90deg);
 }
-.statia1_part3 {
+
+.article-time {
+  font-size: 20px;
+  margin-top: auto; /* Pushes the time to the bottom of the meta container */
+}
+
+.article-image {
   margin-left: 40px;
-}
-.statia2 {
+  flex: 0 0 30%; /* Allow for larger time column */
   display: flex;
-  flex-direction: row-reverse;
-  margin-right: 58px;
+  align-items: center;
 }
-.statia3 {
-  display: flex;
+
+.article-image img {
+  max-width: 100%;
 }
