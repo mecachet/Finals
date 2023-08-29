@@ -543,75 +543,55 @@
 
 /* Article */
 
-.newsnevents {
-  font-size: 10px;
-  font-weight: bold;
-  text-align: center;
-  color: #2ed279;
+.articles{
+	text-align: center;
+	align-items: center;
+	margin-top: 80px;
 }
 
-.lastest {
-  font-size: 70px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  font-weight: bold;
-}
-.article_maintext {
-  max-width: 470px;
-  font-size: 12px;
-  font-family: "Muli-Light";
+.left-article{
+	background-color: #FAFAFA;
+	padding: 50px 50px;
+	max-width: 700px;
+	height: 500px;
 }
 
-.article1_part1,
-.article2_part1 {
-  background-color: #fafafa;
-  display: flex;
-  flex-direction: column;
-  max-width: 800px;
-  width: 100%;
-  padding-top: 170px;
-  padding-bottom: 50px;
-}
-.article1_title {
-  font-size: 30px;
-  max-width: 304px;
-}
-.fishweekly {
-  font-size: 12px;
-  color: #e93656;
-}
-.article_maintext,
-.article1_title,
-.fishweekly {
-  margin-left: 30px;
-}
-.articleTime1 {
-  color: #e93656;
-  font-size: 20px;
-  transform: matrix(0, -1, 1, 0, 0, 0);
-  margin-top: 150px;
-}
-.article1 {
-  display: flex;
-}
-.article1_part2 {
-  background-color: #131a36;
+.mid-article{
+	background-color: #15263E;
+	color: #E93656;
+	width: 100px;
+	padding-top: 35px;
+	height: 100px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.article2 {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-left: 30px;
+.date{
+	width: 200px;
 }
 
-.article1_part3 img {
-  max-width: 950px;
-  width: 100%;
+.rotate{
+	transform: rotate(-90deg);
 }
-.container_5 {
-  max-width: 1800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.article-photo{
+	max-width: 700px;
+	height: 500px;
+}
+
+.articles-line{
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 30px;
+}
+
+.mid-article-line{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.section-six{
+	margin-top: 50px;
 }
