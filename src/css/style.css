@@ -446,7 +446,8 @@
 #comments-button-3:hover {
   border: 2px solid #e93656;
 }
-.projects-h2 {
+
+*/ Project */ .projects-h2 {
   text-align: center;
   font-size: 70px;
   margin-bottom: 55px;
@@ -499,45 +500,44 @@
     "4 5 6";
 }
 
+/* Your existing styles */
+
 .project {
   width: 300px;
   height: 350px;
   padding-top: 110px;
   transition: all 0.5s;
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow: hidden; /* Ensure images fit within the container */
+  margin: 0; /* Remove any margin */
+}
+
+.project img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.project .projects-icon,
+.project .projects-p {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .project:hover {
   cursor: pointer;
   background-color: #15263e;
 }
-.project:hover .projects-icon {
-  display: inline-block;
-}
+
+.project:hover .projects-icon,
 .project:hover .projects-p {
   display: block;
-}
-.my-portfolio {
-  background-image: url("/src/images/project1.jpg");
-}
-.south-bronx {
-  background-image: url("/src/images/project2.jpg");
-}
-.big-data {
-  background-image: url("/src/images/project3.jpg");
-}
-.records {
-  background-image: url("/src/images/project4.jpg");
-}
-.dope {
-  background-image: url("/src/images/project5.jpg");
-}
-.eztv {
-  background-image: url("/src/images/project6.jpg");
+  z-index: 1;
 }
 
-.projects-link {
-  text-decoration: none;
-  color: white;
+.project:hover img {
+  filter: blur(3px);
 }
