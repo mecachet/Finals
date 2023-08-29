@@ -547,7 +547,7 @@
   font-size: 10px;
   font-weight: bold;
   text-align: center;
-  color: #2ED279;
+  color: #2ed279;
 }
 
 .lastest {
@@ -557,14 +557,14 @@
   margin-bottom: 50px;
   font-weight: bold;
 }
-.statia_Maintext {
+.article_maintext {
   max-width: 470px;
   font-size: 12px;
   font-family: "Muli-Light";
 }
 
-.statia1_part1,
-.statia2_part1 {
+.article1_part1,
+.article2_part1 {
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
@@ -573,17 +573,16 @@
   padding-top: 170px;
   padding-bottom: 50px;
 }
-.statia1_title {
+.article1_title {
   font-size: 30px;
-  font-family: "GlacialIndifference-Bold";
   max-width: 304px;
 }
 .fishweekly {
   font-size: 12px;
   color: #e93656;
 }
-.statia_Maintext,
-.statia1_title,
+.article_maintext,
+.article1_title,
 .fishweekly {
   margin-left: 30px;
 }
@@ -593,22 +592,20 @@
   transform: matrix(0, -1, 1, 0, 0, 0);
   margin-top: 150px;
 }
-.statia1 {
+.article1 {
   display: flex;
 }
-.statia1_part2 {
+.article1_part2 {
   background-color: #131a36;
 }
-.statia1_part3 {
-  margin-left: 40px;
-}
-.statia2 {
+
+.article2 {
   display: flex;
   flex-direction: row-reverse;
   margin-left: 30px;
 }
 
-.statia1_part3 img {
+.article1_part3 img {
   max-width: 950px;
   width: 100%;
 }
