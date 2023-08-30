@@ -377,6 +377,8 @@
   background-color: #15263e;
 }
 
+/* Comments */ 
+
 .comments-slider {
   width: 100%;
   height: 570px;
@@ -626,14 +628,13 @@
 
 .square {
   position: relative;
-  margin: 10px; 
+  margin: 10px;
 }
 
 .square-image {
-  width: 220px; 
-  height: 250px; 
-  transition: transform 0.3s, box-shadow 0.3s; 
-
+  width: 220px;
+  height: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .square-h3 {
@@ -652,12 +653,11 @@
 }
 
 .square:hover .square-image {
-  transform: scale(1.2); 
+  transform: scale(1.2);
   border: 3px solid transparent;
-  border-color: #E93656;
+  border-color: #e93656;
 }
 
 .square:hover .square-h3 {
   opacity: 1;
 }
-
