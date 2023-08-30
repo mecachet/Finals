@@ -377,7 +377,7 @@
   background-color: #15263e;
 }
 
-/* Comments */ 
+/* Comments */
 
 .comments-slider {
   width: 100%;
@@ -623,7 +623,6 @@
 .section-square {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 150px;
 }
 
 .square {
