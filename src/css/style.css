@@ -674,24 +674,56 @@
 
 /* Footer */
 
-.footer {
+.section-footer {
   margin-top: 100px;
 }
 
 .contact-me {
   margin-bottom: 10px;
   color: white;
+  font-size: 42px;
 }
 
 .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
   margin-bottom: 10px;
+}
+
+.form-row input,
+#message {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+}
+
+#message {
+  height: 100px;
+}
+
+#message,
+.form-row input {
+  box-sizing: border-box;
+}
+
+.touch {
+  color: grey;
+  font-size: 18px;
 }
 
 .above-footer {
   width: 100%;
   height: 500px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(images/map.jpg);
+    url(/src/images/map.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;
