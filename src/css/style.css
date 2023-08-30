@@ -679,12 +679,13 @@
 }
 
 .contact-me {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: white;
   font-size: 42px;
 }
 
 .form {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -709,12 +710,11 @@
 #message {
   height: 100px;
   width: 100%;
-  margin-right: 0
 }
 
 .touch {
-  color: grey;
-  font-size: 18px;
+  color: rgb(164, 164, 164);
+  font-size: 16px;
 }
 
 .above-footer {
@@ -781,7 +781,7 @@
   margin-top: 12px;
 }
 
-.last-line {
+.rights {
   color: #a0a8b7;
   background-color: #171717;
   height: 80px;
