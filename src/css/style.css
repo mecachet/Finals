@@ -549,6 +549,7 @@
   font-weight: bold;
   text-align: center;
   color: #2ed279;
+  margin-bottom: -10px;
 }
 
 .lastest {
@@ -631,8 +632,8 @@
 .square-image {
   width: 220px; 
   height: 250px; 
-  transition: transform 0.3s;
-  
+  transition: transform 0.3s, box-shadow 0.3s; 
+
 }
 
 .square-h3 {
@@ -652,7 +653,8 @@
 
 .square:hover .square-image {
   transform: scale(1.2); 
-  border-color: pink;
+  border: 3px solid transparent;
+  border-color: #E93656;
 }
 
 .square:hover .square-h3 {
