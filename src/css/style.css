@@ -564,13 +564,17 @@
 }
 
 .small {
-  font-size: 38px;
+  font-size: 48px;
+}
+
+.weekly {
+  margin-top: 15px;
 }
 
 .weekly,
 .small,
 .small-text {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .left-article {
