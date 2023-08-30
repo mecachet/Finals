@@ -112,13 +112,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   projectCategories.forEach((category) => {
     category.addEventListener("click", function () {
-      // Toggle active class for project categories
       projectCategories.forEach((cat) => {
         cat.classList.remove("active");
       });
       category.classList.add("active");
 
-      // Filter project items based on selected category
       const selectedCategory = category.id.replace("li-", "");
       projectItems.forEach((item) => {
         const itemCategory = item.getAttribute("data-category");
@@ -135,7 +133,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   projectItems.forEach((item) => {
     item.addEventListener("mouseover", function () {
-      // Show icon and text on hover
       const textElement = item.querySelector(".projects-p");
       textElement.style.display = "block";
       const iconElement = item.querySelector(".projects-icon");
@@ -143,7 +140,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     item.addEventListener("mouseout", function () {
-      // Hide icon and text when not hovering
       const textElement = item.querySelector(".projects-p");
       textElement.style.display = "none";
       const iconElement = item.querySelector(".projects-icon");
