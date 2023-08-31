@@ -9,7 +9,7 @@
   font-family: "GlacialIndifference";
   src: url("fonts/GlacialIndifference-Regular.ttf");
   src: url("fonts/GlacialIndifference-Regular.woff");
-  src: url("fonts/GlacialIndifference-Regular.woff2");
+  src: url("../../fonts/GlacialIndifference-Regular.woff2");
 }
 
 * {
@@ -817,3 +817,4 @@
 .lower-footer {
   text-align: center;
 }
+
