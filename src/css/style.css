@@ -818,6 +818,7 @@
 }
 
 /* Responsive Adjustments */
+
 @media (max-width: 768px) {
   .slider {
       height: 50vh;
@@ -936,5 +937,4 @@
 }
 
 @media (max-width: 480px) {
-  /* Styles specific for smaller phones */
 }
