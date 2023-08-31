@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (data.status === 1) {
         modalContent.textContent =
-          "Thank you for getting in touch with Otar! I appreciate you contacting us.";
+          "Thank you for getting in touch with Otar! I appreciate you contacting me.";
         modal.style.display = "block";
       }
     } catch (error) {
