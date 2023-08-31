@@ -148,6 +148,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// form //
+
 document.addEventListener("DOMContentLoaded", function () {
   const sendButton = document.querySelector(".send");
   const modal = document.querySelector(".modal");
