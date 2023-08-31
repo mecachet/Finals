@@ -385,7 +385,7 @@
 .comments-wrapper {
   background-color: #15263e;
   color: white;
-  background-image: url("/src/images/clip.jpg");
+  background-image: url("../images/clip.jpg");
   opacity: 100%;
 }
 
@@ -717,7 +717,7 @@
   width: 100%;
   height: 500px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/src/images/map.png);
+    url(../images/map.png);
   display: flex;
   flex-direction: column;
   align-items: center;
